@@ -13,12 +13,27 @@
             color: #333;
         }
 
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+            border-radius: 8px;
+        }
+
         h1 {
             color: #e91e63;
             font-size: 3em;
+            margin: 0;
         }
 
-        img {
+        img.product-image {
             width: 300px;
             border-radius: 10px;
             margin: 20px 0;
@@ -47,10 +62,14 @@
 </head>
 <body>
 
-    <h1>FizzUp - Refresh Your World</h1>
+    <header>
+        <!-- Logo Image -->
+        <img src="drink.jpg" alt="FizzUp Logo" class="logo">
+        <h1>FizzUp - Refresh Your World</h1>
+    </header>
 
-    <!-- Updated image path -->
-    <img src="drink.jpg" alt="FizzUp Soft Drink">
+    <!-- Product Image -->
+    <img src="https://via.placeholder.com/300x400?text=FizzUp+Bottle" alt="FizzUp Soft Drink" class="product-image">
 
     <p>Introducing FizzUp – the ultimate soft drink that brings a burst of fruity flavor with every sip. Stay cool, stay refreshed, and energize your day the FizzUp way!</p>
 
@@ -58,3 +77,4 @@
 
 </body>
 </html>
+
